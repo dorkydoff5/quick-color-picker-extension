@@ -5,10 +5,10 @@
 ---
 
 ### 👋 About The Creator
-Hi, this is **Dorky Doff**!  
+Hi, this is **DorkyDoffLok**!  
 As someone working across 3D, animation, and digital visuals, grabbing accurate colors from screen references on the fly is a daily necessity. I created this lightweight extension to quickly pick colors, copy hex codes with one click, and store recent color swatches.
 
-* 🐙 **GitHub:** [@DorkyDoff](https://github.com/DorkyDoff)
+* 🐙 **GitHub:** [@DorkyDoffLok](https://github.com/DorkyDoff)
 
 ---
 
