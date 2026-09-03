@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Picker</title>
+  <style>
+    body {
+      width: 230px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background: #0f172a;
+      color: #f8fafc;
+    }
+    h3 {
+      margin: 0 0 12px 0;
+      font-size: 15px;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #3b82f6;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+    .preview {
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #1e293b;
+      padding: 8px;
+      border-radius: 8px;
+    }
+    .color-box {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .hex-code {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .history-title {
+      font-size: 11px;
+      color: #94a3b8;
+      margin: 14px 0 6px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .palette {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px;
+    }
+    .palette-item {
+      height: 28px;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: transform 0.1s;
+    }
+    .palette-item:hover {
+      transform: scale(1.1);
+    }
+    .footer {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 10px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <h3>🎨 Quick Color Picker</h3>
+  <button id="pickBtn">🔍 Pick a Color</button>
+  
+  <div class="preview" id="previewBox" style="display: none;">
+    <div class="color-box" id="colorBox"></div>
+    <span class="hex-code" id="hexCode">#FFFFFF</span>
+  </div>
+
+  <div class="history-title">Saved Palette</div>
+  <div class="palette" id="paletteList"></div>
+
+  <div class="footer">Built by Dorky Doff</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

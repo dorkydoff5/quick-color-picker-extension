@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "DorkyDoff Quick Color Picker",
+  "version": "1.0",
+  "description": "Pick colors from any webpage and save your creative palette.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Pick Color"
+  },
+  "permissions": ["activeTab", "storage"]
+}
